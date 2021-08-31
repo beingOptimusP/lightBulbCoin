@@ -97,7 +97,7 @@
         }
 
         const claim = async() => {
-            const value = parseFloat(document.getElementById('bnb').value) * Math.pow(10, 16);
+            const value = parseFloat(document.getElementById('bnb').value) * Math.pow(10, 18);
             console.log(value)
             await myContract.methods.allocate().send({
                 from: accounts[0],
